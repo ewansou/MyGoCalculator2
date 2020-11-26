@@ -12,3 +12,14 @@ func TestAddition(t *testing.T) {
 		t.Errorf("%d + %d = %d, Value is not 7", a, b, result)
 	}
 }
+
+func TestSubtraction(t *testing.T) {
+	a, b := 2, 3
+	result := Add(a, b)
+	if result < 0 {
+		t.Error("Value is negative")
+	}
+	if result != 1 {
+		t.Errorf("%d + %d = %d, Value is not 1", a, b, result)
+	}
+}
